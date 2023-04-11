@@ -21,18 +21,18 @@ public class ControlFlowExercises {
 //            i-=5;
 //        } while (i> 10);
         // do while starting at 2 and display the square
-//        int i = 2;
+//        long i = 2;
 //        do{
-//            System.out.println(i*i);
+//            System.out.println(i);
 //            i *= i;
-//        } while (i < 1000000);
+//        } while (i < 1_000_000);
         // refactor the two exercises for for loop
 
 //        for(int i = 0; i < 100; i +=2){
 //            System.out.println(i);
 //        }
 
-//         for(int i = 2; i < 1000000; i *=2){
+//         for(long i = 2; i < 1000000; i+=i){
 //            System.out.println(i);
 //        }
 
