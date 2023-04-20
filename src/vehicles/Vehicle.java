@@ -14,4 +14,9 @@ public class Vehicle {
     public void makeNoise(){
         System.out.println("Vroom Vroom");
     }
+
+    @Override
+    public String toString(){
+        return this.getName();
+    }
 }
