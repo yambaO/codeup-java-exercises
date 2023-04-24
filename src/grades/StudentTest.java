@@ -22,6 +22,7 @@ public class StudentTest {
         student.addGrade(70);
         student.addGrade(90);
         student.addGrade(80);
+
         System.out.println(Arrays.toString(studentsArray));
         System.out.println(student.getGrades());
         System.out.println( student.getGradeAverage());

@@ -1,6 +1,7 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.stream.Stream;
 
 public class Student {
@@ -39,6 +40,9 @@ public class Student {
         for (int grade : newGrades) {
             grades.add(grade);
         }
+    }
+    public void addGrades(ArrayList<Integer> grades){
+        this.grades.addAll(grades);
     }
     public double getGradeAverage() {
         if (this.grades.size() == 0) {

@@ -19,6 +19,9 @@ public class InputTest {
         System.out.print("Enter a decimal between 1.0 and 10.0: ");
         System.out.println("You entered: " + input.getDouble(1.0, 10.0));
 
+        System.out.print("Enter a decimal between 1.0 and 10.0: ");
+        System.out.println("You entered: " + input.getDouble("4.0, 15.0"));
+
         System.out.print("Enter a decimal: ");
         System.out.println("You entered: " + input.getDouble());
 

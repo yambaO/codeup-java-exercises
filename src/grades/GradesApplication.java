@@ -1,6 +1,8 @@
 package grades;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+
 import util.Input;
 
 public class GradesApplication extends Student {
@@ -13,7 +15,7 @@ public class GradesApplication extends Student {
         Input input = new Input();
         String choice;
         do {
-            System.out.print("What student would you like to see more information on? (Enter GitHub username): ");
+            System.out.println("What student would you like to see more information on? (Enter GitHub username): ");
             String username = input.getString();
             if (students.containsKey(username)) {
                 Student student = students.get(username);
@@ -37,33 +39,25 @@ public class GradesApplication extends Student {
         ArrayList<Integer> gradeStudent1 = new ArrayList<>();
         Student mike = new Student("Mike",gradeStudent1);
         mike.setGrades(gradeStudent1);
-        mike.addGrade(90);
-        mike.addGrade(70);
-        mike.addGrade(100);
+        mike.addGrades(new ArrayList<>(List.of(90,70, 100)));
         students.put("CommitmentIssues404",mike);
 
         ArrayList<Integer> gradeStudent2 = new ArrayList<>();
         Student alice = new Student("Alice", gradeStudent2);
         alice.setGrades(gradeStudent1);
-        alice.addGrade(85);
-        alice.addGrade(92);
-        alice.addGrade(78);
+        alice.addGrades(new ArrayList<>(List.of(85,92, 78)));
         students.put("GitKrakenJokes", alice);
 
         ArrayList<Integer> gradeStudent3 = new ArrayList<>();
         Student bob = new Student("Bob", gradeStudent3);
         bob.setGrades(gradeStudent1);
-        bob.addGrade(75);
-        bob.addGrade(88);
-        bob.addGrade(91);
+        bob.addGrades(new ArrayList<>(List.of(75,88, 91)));
         students.put("MasterOfMergeConflicts", bob);
 
         ArrayList<Integer> gradeStudent4 = new ArrayList<>();
         Student charlie = new Student("Charlie", gradeStudent4);
         charlie.setGrades(gradeStudent4);
-        charlie.addGrade(95);
-        charlie.addGrade(79);
-        charlie.addGrade(82);
+        charlie.addGrades(new ArrayList<>(List.of(95,79, 82)));
         students.put("RepoRascal", charlie);
 
         commandLine(students);
